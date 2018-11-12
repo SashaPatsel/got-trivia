@@ -90,6 +90,8 @@ $(document).ready(function() {
       $(".game").hide();
       $(".score").show();
       renderScore()
+    } else {
+      renderQuestion()
     }
   }
 
@@ -120,7 +122,6 @@ $(document).ready(function() {
   $(document).on("click", ".choice-btn", function() {
     checkAnswer(this.textContent, current.answer)
     nextQuestion()
-    renderQuestion()
   })
 
   // GAME

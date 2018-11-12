@@ -94,6 +94,15 @@ p {
     animation: none;
     color: black; }
 
+.timer {
+  background-color: #860420;
+  border: #e5b72b solid 2px;
+  color: #e5b72b;
+  padding: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column; }
+
 body {
   background-image: url("../images/kings-landing.jpg");
   background-attachment: fixed;
@@ -118,6 +127,11 @@ body {
 .intro__btn--contain {
   margin: 2rem 0;
   display: flex;
+  justify-content: center; }
+
+.game__header {
+  display: flex;
+  align-items: center;
   justify-content: center; }
 
 .game__btns {

@@ -1,0 +1,17 @@
+.timer {
+  background-color: $color-primary;
+  border: $color-secondary solid 2px;
+  color: $color-secondary;
+  padding: 2rem;
+  margin-left: 2rem;
+  display: flex;
+  flex-direction: column;
+
+  &__heading {
+
+  }
+
+  &__time {
+    
+  }
+}
