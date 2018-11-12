@@ -65,8 +65,17 @@ $(document).ready(function() {
   }
 
   function renderQuestion() {
+    // Remove last q
+    $(".heading--secondary").empty()
+    $(".heading--question").empty()
+    $(".game__btns").empty()
+
+    // add new data
     $(".heading--secondary").html("Question " + qIndex)
     $(".heading--question").html(questions["q" + qIndex].question)
+    for (var i = 0 ; i < 4 ; i++) {
+      $(".game__btns").append("<button class='choice-btn'>"+ questions["q" + qIndex].choices[i] +"</button>")
+    }
   }
 
   function nextQuestion() {
