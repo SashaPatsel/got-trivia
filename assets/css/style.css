@@ -61,8 +61,8 @@ p {
 
 .choice-btn {
   font-family: got;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 1.5rem;
   color: #860420;
   background-color: #e5b72b;
   border: none;
@@ -108,3 +108,8 @@ body {
   margin: 2rem 0;
   display: flex;
   justify-content: center; }
+
+.game__btns {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }

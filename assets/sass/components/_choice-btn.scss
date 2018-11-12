@@ -1,12 +1,12 @@
 .choice-btn {
   font-family: got;
-  font-size: 1.5rem;
-  padding: 1rem;
+  font-size: 1rem;
+  padding: 1.5rem;
   color: $color-primary;
   background-color: $color-secondary;
   border: none;
   border-radius: $border-radius;
-  
+
   &:hover {
     cursor: pointer;
   }
