@@ -3,15 +3,20 @@
   border: $color-secondary solid 2px;
   color: $color-secondary;
   padding: 2rem;
-  margin-left: 2rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 3rem;
+
   display: flex;
   flex-direction: column;
 
   &__heading {
-
+    font-family: got;
+    font-size: 1.8rem;
   }
 
   &__time {
-    
+    text-align: center;
+    font-family: got;
   }
 }

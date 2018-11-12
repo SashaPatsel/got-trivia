@@ -60,6 +60,7 @@ $(document).ready(function() {
   var correct = 0;
   var incorrect = 0;
   var current = questions["q" + qIndex]
+  var timeLeft;
 
 // HELPER FUNCTIONS
   function showIntro() {
@@ -72,13 +73,16 @@ $(document).ready(function() {
     $(".heading--secondary").empty();
     $(".heading--question").empty();
     $(".game__btns").empty();
-
+   
     // add new data
+    clearInterval(timeLeft);
+    timer();
     $(".heading--secondary").html("Question " + qIndex);
     $(".heading--question").html(current.question);
     for (var i = 0 ; i < 4 ; i++) {
       $(".game__btns").append("<button class='choice-btn'>"+ current.choices[i] +"</button>");
     }
+    
   }
 
   function nextQuestion() {
@@ -107,6 +111,22 @@ $(document).ready(function() {
     $("#correct").text(correct);
     $("#incorrect").text(incorrect);
   }
+
+  function timer() {
+    var questionTime = 10;
+    timeLeft = setInterval(function() {
+      if (questionTime > 0) {
+        $(".timer__time").text(questionTime);
+        questionTime--;
+      } else {
+        clearInterval(timeLeft);
+        nextQuestion();
+        incorrect++;
+      }
+      
+    }, 1000)
+  }
+
 
 
   // EVENT LISTENERS

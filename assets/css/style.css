@@ -99,9 +99,17 @@ p {
   border: #e5b72b solid 2px;
   color: #e5b72b;
   padding: 2rem;
-  margin-left: 2rem;
+  position: absolute;
+  right: 5rem;
+  bottom: 3rem;
   display: flex;
   flex-direction: column; }
+  .timer__heading {
+    font-family: got;
+    font-size: 1.8rem; }
+  .timer__time {
+    text-align: center;
+    font-family: got; }
 
 body {
   background-image: url("../images/kings-landing.jpg");
@@ -132,7 +140,10 @@ body {
 .game__header {
   display: flex;
   align-items: center;
-  justify-content: center; }
+  justify-content: center;
+  width: 70%;
+  margin: 0 auto;
+  position: relative; }
 
 .game__btns {
   display: flex;
