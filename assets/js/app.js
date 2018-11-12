@@ -85,6 +85,11 @@ $(document).ready(function() {
     qIndex++;
     // Update pointer
     current = questions["q" + qIndex]
+
+    if (qIndex > 10) {
+      $(".game").hide();
+      $(".score").show();
+    }
   }
 
   function checkAnswer(user, answer) {
