@@ -20,14 +20,24 @@ p {
     1px 1px 0 $color-primary;
 }
 
-.heading--main {
-  color: $color-primary;
-  font-size: 4rem;
-  letter-spacing: .8rem;
-  text-align: center;
-  margin-top: 7rem;
-  margin-bottom: 5rem;
+.heading {
+
+  &--main {
+    color: $color-primary;
+    font-size: 4rem;
+    letter-spacing: .8rem;
+    text-align: center;
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
+
+  &--secondary {
+    margin-top: 7rem;
+    margin-bottom: 5rem;
+  }
 }
+
+
 
 
 

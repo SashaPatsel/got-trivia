@@ -1,6 +1,7 @@
 // Wait for document to load before we run our scripts
 $(document).ready(function() {
-  // All questions and answers
+
+  // DATA
   var questions = {
     q1: {
       question: "Who established the Targaryen dynasty in Westeros?",
@@ -54,14 +55,37 @@ $(document).ready(function() {
     }
   }
 
-  // Global vars
+  // GLOBAL VARS
   var qIndex = 1
 
-
+// HELPER FUNCTIONS
   function showIntro() {
     $(".game").hide()
     $(".score").hide()
   }
-  // immediately show intro page
+
+  function renderQuestion() {
+    $(".heading--secondary").html("Question " + qIndex)
+    $(".heading--question").html(questions["q" + qIndex].question)
+  }
+
+  function nextQuestion() {
+    qIndex++
+  }
+
+
+  // EVENT LISTENERS
+
+  // Start game
+  $(document).on("click", "#startBtn", function() {
+    $(".intro").hide()
+    $(".game").show()
+    renderQuestion()
+  })
+
+
+  // GAME
+
+  // Immediately show intro page
   showIntro()
 })
