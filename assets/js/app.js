@@ -31,7 +31,7 @@ $(document).ready(function() {
     q6: {
       question: "Who is known as the Red Viper of Dorne?",
       choices: ["Quentyn Martell", "Princess Myrcella", "Oberyn Martell", "Gregor Clegane"],
-      answer: ""
+      answer: "Oberyn Martell"
     },
     q7: {
       question: "Who is known as King Beyond The Wall?",
@@ -56,30 +56,41 @@ $(document).ready(function() {
   }
 
   // GLOBAL VARS
-  var qIndex = 1
+  var qIndex = 1;
+  var correct = 0;
+  var incorrect = 0;
+  var current = questions["q" + qIndex]
 
 // HELPER FUNCTIONS
   function showIntro() {
-    $(".game").hide()
-    $(".score").hide()
+    $(".game").hide();
+    $(".score").hide();
   }
 
   function renderQuestion() {
     // Remove last q
-    $(".heading--secondary").empty()
-    $(".heading--question").empty()
-    $(".game__btns").empty()
+    $(".heading--secondary").empty();
+    $(".heading--question").empty();
+    $(".game__btns").empty();
 
     // add new data
-    $(".heading--secondary").html("Question " + qIndex)
-    $(".heading--question").html(questions["q" + qIndex].question)
+    $(".heading--secondary").html("Question " + qIndex);
+    $(".heading--question").html(current.question);
     for (var i = 0 ; i < 4 ; i++) {
-      $(".game__btns").append("<button class='choice-btn'>"+ questions["q" + qIndex].choices[i] +"</button>")
+      $(".game__btns").append("<button class='choice-btn'>"+ current.choices[i] +"</button>");
     }
   }
 
   function nextQuestion() {
-    qIndex++
+    qIndex++;
+  }
+
+  function checkAnswer(user, answer) {
+    if (user === answer) {
+      correct++;
+    } else {
+      incorrect++;
+    }
   }
 
 
@@ -87,14 +98,18 @@ $(document).ready(function() {
 
   // Start game
   $(document).on("click", "#startBtn", function() {
-    $(".intro").hide()
-    $(".game").show()
-    renderQuestion()
+    $(".intro").hide();
+    $(".game").show();
+    renderQuestion();
   })
 
+  // User guess
+  $(document).on("click", ".choice-btn", function() {
+    checkAnswer(this.textContent, current.answer)
+  })
 
   // GAME
 
   // Immediately show intro page
-  showIntro()
+  showIntro();
 })
