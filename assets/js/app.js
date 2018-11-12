@@ -113,9 +113,10 @@ $(document).ready(function() {
   }
 
   function timer() {
-    var questionTime = 10;
+    var questionTime = 9;
+    $(".timer__time").text(questionTime + 1);
     timeLeft = setInterval(function() {
-      if (questionTime > 0) {
+      if (questionTime > -1) {
         $(".timer__time").text(questionTime);
         questionTime--;
       } else {
