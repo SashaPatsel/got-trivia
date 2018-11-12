@@ -83,6 +83,8 @@ $(document).ready(function() {
 
   function nextQuestion() {
     qIndex++;
+    // Update pointer
+    current = questions["q" + qIndex]
   }
 
   function checkAnswer(user, answer) {
@@ -106,6 +108,8 @@ $(document).ready(function() {
   // User guess
   $(document).on("click", ".choice-btn", function() {
     checkAnswer(this.textContent, current.answer)
+    nextQuestion()
+    renderQuestion()
   })
 
   // GAME
