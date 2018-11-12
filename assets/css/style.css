@@ -39,7 +39,8 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: got; }
+  font-family: got;
+  text-align: center; }
 
 p {
   font-family: fantasy;
@@ -51,13 +52,20 @@ p {
   color: #860420;
   font-size: 4rem;
   letter-spacing: .8rem;
-  text-align: center;
   margin-top: 7rem;
   margin-bottom: 5rem; }
 
 .heading--secondary {
   margin-top: 7rem;
-  margin-bottom: 5rem; }
+  margin-bottom: 5rem;
+  font-size: 3.7rem;
+  color: #860420; }
+
+.heading--question {
+  margin: 3rem 0;
+  color: #e5b72b;
+  font-size: 2rem;
+  letter-spacing: .4rem; }
 
 .choice-btn {
   font-family: got;
