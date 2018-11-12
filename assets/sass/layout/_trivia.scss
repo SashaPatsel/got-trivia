@@ -5,3 +5,13 @@ body {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+
+.container {
+	width: 70%;
+	margin: 0 auto;
+	background-color: rgba($color-primary, .8);
+	padding: 2rem;
+	border-radius: $border-radius;
+	border: solid 2px $color-secondary;
+
+}

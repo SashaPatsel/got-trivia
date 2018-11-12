@@ -1,0 +1,15 @@
+.game-btn {
+  font-family: got;
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: $color-primary;
+  background-color: $color-secondary;
+  border: none;
+  animation: bulge 2s ease-in-out infinite;
+
+  &:hover {
+    cursor: pointer;
+    animation: none;
+    color: black;
+  }
+}

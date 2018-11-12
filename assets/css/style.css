@@ -1,3 +1,11 @@
+@keyframes bulge {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
 html {
   font-size: 62.5%; }
   @media only screen and (min-width: 112.5em) {
@@ -43,7 +51,22 @@ p {
   color: #860420;
   font-size: 4rem;
   letter-spacing: .8rem;
-  text-align: center; }
+  text-align: center;
+  margin-top: 7rem;
+  margin-bottom: 5rem; }
+
+.game-btn {
+  font-family: got;
+  font-size: 2.5rem;
+  padding: 1rem;
+  color: #860420;
+  background-color: #e5b72b;
+  border: none;
+  animation: bulge 2s ease-in-out infinite; }
+  .game-btn:hover {
+    cursor: pointer;
+    animation: none;
+    color: black; }
 
 body {
   background-image: url("../images/kings-landing.jpg");
@@ -51,3 +74,22 @@ body {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  background-color: rgba(134, 4, 32, 0.8);
+  padding: 2rem;
+  border-radius: 0.3rem;
+  border: solid 2px #e5b72b; }
+
+.intro__instructions {
+  margin-bottom: 1rem;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  font-size: 2rem;
+  letter-spacing: .2rem; }
+
+.intro__btn--contain {
+  margin: 2rem 0;
+  display: flex;
+  justify-content: center; }
