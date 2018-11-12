@@ -27,11 +27,23 @@ body {
   font-family: got;
   src: url("got.ttf"); }
 
-body {
+h1,
+h2,
+h3,
+h4 {
   font-family: got; }
 
-.hide {
-  display: none; }
+p {
+  font-family: fantasy;
+  font-size: 1.5rem;
+  color: #e5b72b;
+  text-shadow: -1px -1px 0 #860420, 1px -1px 0 #860420, -1px 1px 0 #860420, 1px 1px 0 #860420; }
+
+.heading--main {
+  color: #860420;
+  font-size: 4rem;
+  letter-spacing: .8rem;
+  text-align: center; }
 
 body {
   background-image: url("../images/kings-landing.jpg");
