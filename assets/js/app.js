@@ -89,6 +89,7 @@ $(document).ready(function() {
     if (qIndex > 10) {
       $(".game").hide();
       $(".score").show();
+      renderScore()
     }
   }
 
@@ -98,6 +99,11 @@ $(document).ready(function() {
     } else {
       incorrect++;
     }
+  }
+
+  function renderScore() {
+    $("#correct").text(correct);
+    $("#incorrect").text(incorrect);
   }
 
 
