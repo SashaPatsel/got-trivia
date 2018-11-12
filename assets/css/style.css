@@ -15,8 +15,7 @@ html {
 
 body {
   /* makes it so that padding and width don't add to total size of element. i.e. height and width will now extend to define other parts of the box model */
-  box-sizing: border-box;
-  font-family: got; }
+  box-sizing: border-box; }
 
 *,
 *::before,
@@ -27,6 +26,9 @@ body {
 @font-face {
   font-family: got;
   src: url("got.ttf"); }
+
+body {
+  font-family: got; }
 
 body {
   background-image: url("../images/kings-landing.jpg");
