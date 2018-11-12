@@ -7,4 +7,11 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/choice-btn";
+@import "components/game-btn";
+
 @import "layout/trivia";
+
+@import "pages/intro";
+@import "pages/question";
+@import "pages/score";

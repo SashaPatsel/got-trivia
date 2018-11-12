@@ -30,6 +30,9 @@ body {
 body {
   font-family: got; }
 
+.hide {
+  display: none; }
+
 body {
   background-image: url("../images/kings-landing.jpg");
   background-attachment: fixed;

@@ -57,4 +57,11 @@ $(document).ready(function() {
   // Global vars
   var qIndex = 1
 
+
+  function showIntro() {
+    $(".game").hide()
+    $(".score").hide()
+  }
+  // immediately show intro page
+  showIntro()
 })
