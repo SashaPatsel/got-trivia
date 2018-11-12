@@ -15,10 +15,22 @@ html {
 
 body {
   /* makes it so that padding and width don't add to total size of element. i.e. height and width will now extend to define other parts of the box model */
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  font-family: got; }
 
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0; }
+
+@font-face {
+  font-family: got;
+  src: url("got.ttf"); }
+
+body {
+  background-image: url("../images/kings-landing.jpg");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }

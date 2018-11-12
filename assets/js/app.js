@@ -1,6 +1,6 @@
 // Wait for document to load before we run our scripts
 $(document).ready(function() {
-
+  // All questions and answers
   var questions = {
     q1: {
       question: "Who established the Targaryen dynasty in Westeros?",
@@ -53,5 +53,8 @@ $(document).ready(function() {
       answer: "Ser Arthur Dayne"
     }
   }
+
+  // Global vars
+  var qIndex = 1
 
 })
