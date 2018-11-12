@@ -24,15 +24,16 @@
   </div>
 
   <div class="game">
+      <audio autoplay loop id="audioGame" controls src="assets/audio/theme.mp3" style="display: none"></audio>
     <div class="game__header">
-      <h2 class="heading--secondary"></h2>
+      <h2 class="heading--secondary" id="questionNum"></h2>
       <div class="timer">
         <h5 class="timer__heading">Time left:</h5>
         <p class="timer__time">10</p>
       </div>
     </div>
     <div class="container">
-      <h3 class="heading--question"></h3>
+      <h3 class="heading--question" id="question"></h3>
       <div class="game__btns">
 
       </div>
@@ -41,8 +42,10 @@
 
 
   <div class="score">
+      <audio autoplay loop id="audioScore" controls src="assets/audio/rains-of-castamere.mp3" style="display: none"></audio>
       <h2 class="heading--secondary">Game Over</h2>
       <div class="container">
+        <h3 class="heading--question">Your Final Results:</h3>
         <h4 class="score__stats">Correct: <span id="correct"></span></h4>
         <h4 class="score__stats">Incorrect: <span id="incorrect"></span></h4>
       </div>

@@ -70,15 +70,15 @@ $(document).ready(function() {
 
   function renderQuestion() {
     // Remove last q
-    $(".heading--secondary").empty();
-    $(".heading--question").empty();
+    $("#questionNum").empty();
+    $("#question").empty();
     $(".game__btns").empty();
    
     // add new data
     clearInterval(timeLeft);
     timer();
-    $(".heading--secondary").html("Question " + qIndex);
-    $(".heading--question").html(current.question);
+    $("#questionNum").html("Question " + qIndex);
+    $("#question").html(current.question);
     for (var i = 0 ; i < 4 ; i++) {
       $(".game__btns").append("<button class='choice-btn'>"+ current.choices[i] +"</button>");
     }
@@ -110,6 +110,8 @@ $(document).ready(function() {
   function renderScore() {
     $("#correct").text(correct);
     $("#incorrect").text(incorrect);
+    $("#audioGame").get(0).remove();
+    $("#audioScore").get(0).play();
   }
 
   function timer() {
@@ -136,6 +138,7 @@ $(document).ready(function() {
   $(document).on("click", "#startBtn", function() {
     $(".intro").hide();
     $(".game").show();
+    $("#audioGame").get(0).play(); 
     renderQuestion();
   })
 
