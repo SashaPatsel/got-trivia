@@ -1,9 +1,37 @@
-body {
+.intro {
   background-image: url("../images/kings-landing.jpg");
   background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+}
+
+.game {
+	background-image: url("../images/wall.jpg");
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
+}
+
+.score {
+	background-image: url("../images/iron-throne.jpg");
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 100vh;
+	width: 100vw;
+	position: absolute;
+	top: 0;
 }
 
 .container {
