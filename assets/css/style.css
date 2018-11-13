@@ -104,6 +104,9 @@ p {
   bottom: 3rem;
   display: flex;
   flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .timer {
+      position: initial; } }
   .timer__heading {
     font-family: got;
     font-size: 1.8rem; }
@@ -169,12 +172,21 @@ p {
   justify-content: center;
   width: 70%;
   margin: 0 auto;
-  position: relative; }
+  position: relative;
+  flex-direction: column; }
+  @media only screen and (max-width: 56.25em) {
+    .game__header {
+      margin-bottom: 2rem; } }
 
 .game__btns {
   display: flex;
   flex-direction: row;
   justify-content: space-around; }
+  @media only screen and (max-width: 56.25em) {
+    .game__btns {
+      flex-direction: column; }
+      .game__btns > * {
+        margin: 2rem 0; } }
 
 .score__stats {
   margin: 3rem 0;

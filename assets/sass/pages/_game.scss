@@ -7,11 +7,24 @@
     width: 70%;
     margin: 0 auto;
     position: relative;
+    flex-direction: column;
+
+    @include responsive(t-port) {
+      margin-bottom: 2rem;
+    }
   }
 
   &__btns {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
+
+    @include responsive(t-port) {
+      flex-direction: column;
+
+      & > * {
+        margin: 2rem 0;
+      }
+    }
   }
 }

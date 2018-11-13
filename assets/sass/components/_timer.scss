@@ -7,6 +7,10 @@
   right: 5rem;
   bottom: 3rem;
 
+  @include responsive(t-port) {
+    position: initial;
+  }
+
   display: flex;
   flex-direction: column;
 
