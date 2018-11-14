@@ -155,6 +155,16 @@ p {
   border-radius: 0.3rem;
   border: solid 2px #e5b72b; }
 
+.evaluate__img {
+  width: 30rem;
+  max-height: 50rem; }
+  .evaluate__img-container {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
 .intro__instructions {
   margin-bottom: 1rem;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;

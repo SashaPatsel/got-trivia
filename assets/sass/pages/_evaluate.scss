@@ -1,0 +1,14 @@
+.evaluate {
+  &__img {
+    width: 30rem;
+    max-height: 50rem;
+
+    &-container {
+      width: 80%;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

@@ -69,6 +69,7 @@ $(document).ready(function() {
   function showIntro() {
     $(".game").hide();
     $(".score").hide();
+    $(".evaluate").hide();
   }
 
   function renderQuestion() {
@@ -103,11 +104,26 @@ $(document).ready(function() {
   }
 
   function checkAnswer(user, answer) {
+    $(".gameContainer").hide()
+    $(".timer").hide()
+    
     if (user === answer) {
       correct++;
+      $(".evaluate__img-container").append("<img src='" + getGif(goodGuess) +"'>")
     } else {
       incorrect++;
+      $(".evaluate__img-container").append("<img src='" + getGif(wrongGuess) +"'>")
     }
+
+    $(".evaluate").show()
+    setTimeout(function() {
+      $(".evaluate").hide()
+      $(".gameContainer").show()
+      $(".timer").show()
+      $(".evaluate__img-container").empty()
+      nextQuestion()
+    }, 5000)
+    
   }
 
   function renderScore() {
@@ -126,11 +142,14 @@ $(document).ready(function() {
         questionTime--;
       } else {
         clearInterval(timeLeft);
-        nextQuestion();
-        incorrect++;
+        checkAnswer(null, current.answer);
       }
       
     }, 1000)
+  }
+
+  function getGif(answer) {
+    return answer[Math.floor(Math.random() * answer.length)]
   }
 
 
@@ -148,7 +167,7 @@ $(document).ready(function() {
   // User guess
   $(document).on("click", ".choice-btn", function() {
     checkAnswer(this.textContent, current.answer)
-    nextQuestion()
+    
   })
 
   // GAME
