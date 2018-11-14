@@ -2,13 +2,7 @@
 
 <img align="center" src="assets/images/demo.png">
 
-[Book.me](https://sashapatsel.github.io/got-trivia/) is a template for a hotel booking site, showcasing some of the newest and coolest features in CSS!
-
-[Book.me](https://sashapatsel.github.io/got-trivia/)  is a great place to get design inspiration, and to view some neat and reusable components.
-
-[Book.me](https://sashapatsel.github.io/got-trivia/) is fully responsive. It adapts to whatever screen size it is viewed on
-
-Note: Book.me is a static app. In other words, it does not have much functionality other than what can be done in css. 
+[Game of Thrones Trivia](https://sashapatsel.github.io/got-trivia/) 
 
 ## Getting started
 

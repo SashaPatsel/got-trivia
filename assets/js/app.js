@@ -55,6 +55,9 @@ $(document).ready(function() {
     }
   }
 
+  var goodGuess = ["https://media.giphy.com/media/OyuoAUQNEXcu4/giphy.gif", "https://uproxx.files.wordpress.com/2014/06/dinklage-tyrion-dance.gif?w=645", "https://media.rbl.ms/image?u=%2Ffiles%2F2016%2F06%2F13%2F6360140683694288111863246461_Daenerys-Targaryen-Game-Thrones-GIFs.gif&ho=https%3A%2F%2Faz616578.vo.msecnd.net&s=102&h=883ff86c7a33155a682c3b88564ec28490fdb391710795516f917db5f0414403&size=980x&c=2309864140"];
+  var wrongGuess = ["https://media.giphy.com/media/LXP19BrVaOOgE/giphy.gif", "https://thumbs.gfycat.com/HauntingMasculineIchthyosaurs-size_restricted.gif", "https://media.giphy.com/media/wmsjvA5UH8Xqo/giphy.gif"];
+ 
   // GLOBAL VARS
   var qIndex = 1;
   var correct = 0;
