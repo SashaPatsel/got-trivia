@@ -110,9 +110,11 @@ $(document).ready(function() {
     if (user === answer) {
       correct++;
       $(".evaluate__img-container").append("<img src='" + getGif(goodGuess) +"'>")
+      $("#evaluate").text("Correct")
     } else {
       incorrect++;
       $(".evaluate__img-container").append("<img src='" + getGif(wrongGuess) +"'>")
+      $("#evaluate").text("Wrong")
     }
 
     $(".evaluate").show()
@@ -122,7 +124,7 @@ $(document).ready(function() {
       $(".timer").show()
       $(".evaluate__img-container").empty()
       nextQuestion()
-    }, 5000)
+    }, 3000)
     
   }
 
